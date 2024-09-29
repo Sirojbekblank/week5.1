@@ -18,7 +18,10 @@ int main() {
                 number+=" ";
             }
         }
-            answer+=number+"\n";
+        if(t!=0) {
+            number+="\n";
+        }
+        answer+=number;
 
     }
     cout<<answer<<endl;
