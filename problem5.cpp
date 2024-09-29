@@ -10,6 +10,7 @@ int main() {
     int position =0;
     for (int i = 1; true; i++) {
         bool result = true;
+        bool final;
         int original =i;
             while (i>0){
 
@@ -24,8 +25,12 @@ int main() {
         if(result==true && i%3!=0) {
             position++;
             if(position==a) {
+                final=true;
                 cout<<i<<endl;
             }
+        }
+        if(final==true) {
+            break;
         }
 
     }
