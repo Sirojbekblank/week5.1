@@ -8,7 +8,7 @@ int main() {
     int a;
     cin>>a;
     int position =0;
-    for (int i = 1; i <= 1000; i++) {
+    for (int i = 1; true; i++) {
         bool result = true;
         int original =i;
             while (i>0){
