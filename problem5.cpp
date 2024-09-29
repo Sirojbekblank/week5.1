@@ -8,9 +8,10 @@ int main() {
     int a;
     cin>>a;
     int position =0;
-    for (int i = 1; true; i++) {
-        bool result = true;
-        int original =i;
+    if(a>0) {
+        for (int i = 1; true; i++) {
+            bool result = true;
+            int original =i;
             while (original>0){
 
                 if(original%10==3) {
@@ -20,14 +21,15 @@ int main() {
                 original/=10;
             }
 
-        if(result==true && i%3!=0) {
-            position++;
-            if(position==a) {
-                cout<<i<<endl;
-                break;
+            if(result==true && i%3!=0) {
+                position++;
+                if(position==a) {
+                    cout<<i<<endl;
+                    break;
+                }
             }
-        }
 
+        }
     }
 
     return 0;
