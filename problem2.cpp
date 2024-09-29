@@ -8,23 +8,18 @@ int main() {
     int t;
     cin>>t;
     string answer ="";
-    for(int i=1;i<=t;i++) {
-        int n;
+    while(t--) {
+        string n;
         cin>>n;
-        string s= to_string(n);
         string number ="";
-        for(int j=s.length()-1;j>=0;j--) {
-            number+=s[j];
+        for(int j=n.length()-1;j>=0;j--) {
+            number+=n[j];
             if(j>0) {
                 number+=" ";
             }
         }
-        if(i!=t) {
             answer+=number+"\n";
-        }
-        else {
-            answer+=number;
-        }
+
     }
     cout<<answer<<endl;
     return 0;
