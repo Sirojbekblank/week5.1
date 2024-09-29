@@ -19,7 +19,7 @@ int main() {
                 number+=" ";
             }
         }
-        answer+=number+"\n";
+        answer+=number;
     }
     cout<<answer<<endl;
     return 0;
