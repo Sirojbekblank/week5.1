@@ -19,7 +19,12 @@ int main() {
                 number+=" ";
             }
         }
-        answer+=number;
+        if(i!=t) {
+            answer+=number+"\n";
+        }
+        else {
+            answer+=number;
+        }
     }
     cout<<answer<<endl;
     return 0;
