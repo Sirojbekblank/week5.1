@@ -12,14 +12,11 @@ int main() {
         for (int i = 1; true; i++) {
             bool result = true;
             int original =i;
-            while (original>0){
 
-                if(original%10==3) {
-                    result = false;
-                    break;
-                }
-                original/=10;
+            if(original%10==3) {
+                result = false;
             }
+
 
             if(result==true && i%3!=0) {
                 position++;
