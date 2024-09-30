@@ -5,25 +5,25 @@
 using namespace std;
 
 int main() {
-    int t;
-    cin>>t;
-    string answer ="";
-    while(t--) {
-        string n;
-        cin>>n;
-        string number ="";
-        for(int j=n.length()-1;j>=0;j--) {
-            number+=n[j];
-            if(j>0) {
-                number+=" ";
-            }
-        }
-        if(t!=0) {
-            number+="\n";
-        }
-        answer+=number;
+    int len;
+    cin >> len;
+    string answer = "";
 
+    for (int i = 1; i <= len; i++) {
+        int num;
+        int digit;
+        cin >> num;
+        string number = "";
+
+        while (num != 0) {
+            digit = num % 10;
+            num = num / 10;
+            number += to_string(digit);
+            number += " ";
+        }
+        answer += number;
+        answer += "\n";
     }
-    cout<<answer<<endl;
+    cout << answer;
     return 0;
 }
